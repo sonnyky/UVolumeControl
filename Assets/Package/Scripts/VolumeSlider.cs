@@ -11,8 +11,7 @@ namespace Tinker
     public class VolumeSlider : MonoBehaviour
     {
         private string m_SettingsFilePath;
-        private float m_SavedVolumeValue; // The value when the application is launched.
-
+        private float m_SavedVolumeValue; 
         private AudioSource m_TargetAudioSource;
 
         private AudioMixer m_Mixer;
@@ -120,7 +119,7 @@ namespace Tinker
             }
             else
             {
-                GUILayout.Label("このモードでは音量調整できません");
+                GUILayout.Label("Cannot adjust volume in this mode");
             }
         }
 
